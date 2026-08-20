@@ -125,12 +125,3 @@ export async function apiFetch<T = unknown>(
 }
 
 export { API_URL };
-
-theabhik2020_db_user;
-Q6oqP75aX0qlBfjs;
-
-theabhik2020_db_user;
-Q6oqP75aX0qlBfjs;
-
-
-mongodb+srv://theabhik2020_db_user:Q6oqP75aX0qlBfjs@cluster0.idx8ce8.mongodb.net/main
