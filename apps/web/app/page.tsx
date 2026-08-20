@@ -1,4 +1,5 @@
 import Image, { type ImageProps } from "next/image";
+import Link from "next/link";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
 
@@ -39,29 +40,16 @@ export default function Home() {
         </ol>
 
         <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new/clone?demo-description=Learn+to+implement+a+monorepo+with+a+two+Next.js+sites+that+has+installed+three+local+packages.&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F4K8ZISWAzJ8X1504ca0zmC%2F0b21a1c6246add355e55816278ef54bc%2FBasic.png&demo-title=Monorepo+with+Turborepo&demo-url=https%3A%2F%2Fexamples-basic-web.vercel.sh%2F&from=templates&project-name=Monorepo+with+Turborepo&repository-name=monorepo-turborepo&repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fturborepo%2Ftree%2Fmain%2Fexamples%2Fbasic&root-directory=apps%2Fdocs&skippable-integrations=1&teamSlug=vercel&utm_source=create-turbo"
-            target="_blank"
+          <Link href="/login" className={styles.primary}>
+            Sign in
+          </Link>
+          <Link
+            href="/register"
+            target="_self"
             rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://turborepo.dev/docs?utm_source"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+            className={styles.secondary}>
+            Create account
+          </Link>
         </div>
         <Button appName="web" className={styles.secondary}>
           Open alert
@@ -71,8 +59,7 @@ export default function Home() {
         <a
           href="https://vercel.com/templates?search=turborepo&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           <Image
             aria-hidden
             src="/window.svg"
@@ -85,8 +72,7 @@ export default function Home() {
         <a
           href="https://turborepo.dev?utm_source=create-turbo"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           <Image
             aria-hidden
             src="/globe.svg"

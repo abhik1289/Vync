@@ -3,6 +3,6 @@ import { authRouter } from "./auth.js";
 
 const v1Router: Router = express.Router();
 
-v1Router.use("/v1", authRouter);
+v1Router.use("/auth", authRouter);
 
 export { v1Router };
